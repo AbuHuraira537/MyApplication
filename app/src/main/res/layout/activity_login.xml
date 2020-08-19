@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+android:layout_margin="1dp"
+    android:padding="3dp"
+       tools:context=".LoginActivity">
+<TextView
+android:id="@+id/email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textColor="@color/colorAccent"
+    android:text="Enter Email And Password"
+android:textSize="32dp"
+    android:padding="20dp"
+    android:maxLines="2"
+    android:ellipsize="end"
+    />
+    <TextView
+        android:id="@+id/labelforemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="username / email"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="3dp"
+        />
+
+
+    <EditText
+        android:id="@+id/emailbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username / email"
+        android:textColor="@color/colorAccent"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="4px"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   >
+        <TextView
+            android:id="@+id/labelforpassword"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/labelforforgetpassword"
+            android:textColor="#02f300"
+            android:paddingRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forget password?"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColor="@color/colorAccent"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/signinbutton"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0256f1"
+        android:text="Sign In"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:orientation="horizontal">
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ebecf0"
+            ></View>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+android:text="OR"></TextView>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ebecf0"
+            ></View>
+  </LinearLayout>
+<Button
+    android:id="@+id/signupwithgoogle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="SIGN UP WITH GOOGLE"
+android:paddingLeft="5dp"
+    android:drawableLeft="@mipmap/ic_launcher"></Button>
+    <Button
+        android:id="@+id/signupwithfacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP WITH FACEBOOK"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@mipmap/ic_launcher"></Button>
+
+
+</LinearLayout>
